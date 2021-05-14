@@ -74,6 +74,11 @@ h3 {
   font-size: var(--fs-h3);
 }
 
+.clients {
+  font-size: 20px;
+  margin-left: 2em;
+}
+
 .section__title {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
@@ -114,9 +119,10 @@ header {
   padding: 1em;
 }
 .logo {
-  margin-top: -10px;
-  margin-left: 30px;
-  width: 150px;
+  margin-top: -30px;
+  margin-left: 20px;
+  width: 100px;
+  padding: 0;
 }
 
 .nav {
@@ -158,8 +164,9 @@ header {
 .hamburger {
   position: fixed;
   display: block;
-  top: 10px;
-  right: 20px;
+  top: 20px;
+
+  right: 25px;
 }
 
 .hamburger,
@@ -225,6 +232,7 @@ header {
 
 .myskills {
   margin-top: 1em;
+  margin-left: ;
   padding: 1em;
   background-color: #0c1446;
   color: var(--clr-light);
@@ -279,7 +287,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   margin: 50px;
 }
 
@@ -445,6 +452,10 @@ footer {
   margin: 0 auto;
 }
 
+.nav {
+  font-size: 20px;
+}
+
 @media (min-width: 900px) {
   .aboutme {
     display: grid;
@@ -491,5 +502,34 @@ footer {
 
     border-radius: 10px;
     box-shadow: -1px -1px 1px 1px white;
+  }
+}
+
+@media (min-width: 900px) {
+  .fa-github,
+  .fa-linkedin,
+  .fa-instagram-square,
+  .fa-instagram,
+  .fa-envelope,
+  .fa-file,
+  .fa-mobile {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 800px) {
+  .img__about {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .nav__item {
+    font-size: 10px;
+  }
+  .foot__link {
+    font-size: 13px;
   }
 }
